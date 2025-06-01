@@ -28,7 +28,7 @@ export default async function initOneSignal(externalUserId) {
       notifyButton: {
         enable: true,
       },
-      allowLocalhostAsSecureOrigin: true,
+      allowLocalhostAsSecureOrigin: false,
     });
 
     if (externalUserId) {

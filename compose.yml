@@ -3,11 +3,10 @@ services:
     container_name: next-app
     build:
       context: .
-      dockerfile: Dockerfile   # Make sure this file exists in current dir
+      dockerfile: Dockerfile
 
     environment:
-      ENV_VARIABLE: ${ENV_VARIABLE}
-      NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
+      NEXT_PUBLIC_ONESIGNAL_APP_ID: bc8c0fec-2fc3-4609-9929-8d67cc84cbf8
 
     env_file:
       - .env.local
