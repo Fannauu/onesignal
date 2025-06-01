@@ -10,7 +10,7 @@ services:
       NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
 
     env_file:
-      - .env
+      - .env.local
 
     volumes:
       - ./src:/app/src
